@@ -20,12 +20,12 @@ I built this for [Stardance](https://stardance.space/r-33jyd), a Hack Club progr
 - Rechargeable LiPo battery charged through USB-C port, with appropriate charging circuitry and protection.
 - Translucent shell inspired by Sony TPS-L2.
   
-# CAD Model:
+## CAD Model:
 
-# PCB
+## PCB
 Here's the PCB Schematic I made in  KiCad.
 <img width="946" height="616" alt="image" src="https://github.com/user-attachments/assets/bd4c1319-b21f-4a1a-9bf5-bd641cfeca20" />
 
-# Firmware Overview
+## Firmware Overview
 
-# BOM:
+## BOM:
