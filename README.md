@@ -45,3 +45,39 @@ The firmware for the ESP32-S3 is planned in Arduino/PlatformIO. It is not writte
 5. LED effects follow the music (planned).
 
 ## BOM:
+
+Here should be everything you need to make the PhantomPod. The full KiCad parts list is in docs/DCD-BOM.csv.
+
+**Main parts**
+- 1x ESP32-S3-WROOM-1-N16 module
+- 1x 0.96"/1.3" 128x64 I2C OLED display (4-pin: GND, VCC, SCL, SDA)
+- 1x RC522 RFID reader module (8-pin)
+- 1x PCM5102A DAC breakout (6-pin)
+- 1x TPA6132A2 headphone amplifier
+- 12x SK6812MINI RGB LEDs (underglow)
+- 1x Bourns PEC09 rotary encoder (side volume dial)
+- 2x CUI SJ1-3523N 3.5 mm headphone jacks
+- 1x USB-C receptacle (GCT USB4105)
+- 1x 3.7 V LiPo battery with protection circuit, JST-PH 2-pin plug
+- 1x JST-PH S2B-PH-K 2-pin battery connector
+
+**Cassette**
+- 6x spring-loaded pogo pins (2.54 mm pitch)
+- 1x NFC tag (NTAG213/215) and 1x microSD card
+- 1x 3D-printed cassette and clear shell
+
+**Power and protection**
+- 1x MCP73831 LiPo charger
+- 1x AP2112K-3.3 LDO regulator
+- 1x USBLC6-2SC6 USB protection
+- 3x AO3401A P-MOSFETs, 2x 2N7002 N-MOSFETs
+
+**Buttons**
+- 6x Omron B3U-3000P side buttons (play, forward, back, setup, reset, boot)
+- 1x SPDT slide switch (power)
+
+**Passives (0603 unless noted)**
+- Capacitors: 12x 100 nF, 6x 1 uF, 1x 10 uF, 1x 0.1 uF, 3x 2.2 uF (0805), 2x 4.7 uF (0805), 1x 10 uF (0805), 1x 100 uF (1210)
+- Resistors: 4x 100 kOhm, 2x 10 kOhm, 2x 5.1 kOhm, 1x 2 kOhm, 1x 1 kOhm, 1x 330 Ohm
+- 1x red or green LED (charge indicator)
+- Female pin sockets for the modules (1x4, 1x8, 1x6, 1x3) and a 1x6 pin header
