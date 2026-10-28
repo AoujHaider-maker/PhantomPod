@@ -12,7 +12,7 @@ I built this for [Stardance](https://stardance.space/r-33jyd), a Hack Club progr
 - Swapable digital cassette: vertical cassette-shaped cartridge that houses a microSD card and NFC tag internally. Slot it in, and the player will recognize it automatically.
 - Pogo pin spring-loaded contact reads 6 gold contacts of the cassette analogously to how the contact mechanism would work in a standard cassette deck.
 - ESP32-S3-WROOM-1 module as an “brain” placed onto 2-layer KiCad custom-made PCB (80×125 mm).
-- Display OLED for album art and animations where the screen size would be selected once a specific component was picked.
+- 2.23" 128x32 OLED (I2C) for track info and animations, framed by an angled bezel so it fits the cassette-player look.
 - 12 SK6812MINI RGB LED lights for the circuit under the board through the transparent shell.
 - Rotary encoder on the side of the device to control volume (Bourns PEC09).
 - Buttons to the side of the device for play/pause and FF/RW functions, plus one button for setup and power slider, so the front of the housing remains pristine.
@@ -22,7 +22,7 @@ I built this for [Stardance](https://stardance.space/r-33jyd), a Hack Club progr
   
 ## CAD Model:
 
-The PhantomPod is a clear shell, roughly 88 × 133.5 mm and about 20 mm thick, so the circuit board and underglow LEDs are visible. The cassette slides in vertically from the top, and the pogo pins touch its six gold pads.
+The PhantomPod is a clear shell, roughly 88 × 133.5 mm and about 20 mm thick, so the circuit board and underglow LEDs are visible. The cassette slides in vertically from the top, and the pogo pins touch its six gold pads. The OLED sits behind an angled window in the front shell. The display itself is rectangular, and the bezel plus the firmware (which keeps the corners black) give it the angled shape.
 
 ![3D render](images/render.png)
 
@@ -41,7 +41,7 @@ The firmware for the ESP32-S3 is planned in Arduino/PlatformIO. It is not writte
 1. Boot, then initialise the OLED, buttons, encoder and the RGB LEDs.
 2. Poll the RC522 RFID reader for a cassette tag. When one is detected, power the cassette contacts (CASS_EN) and mount its microSD card over SPI.
 3. Play audio from the card through the PCM5102A DAC over I2S, with volume from the rotary encoder.
-4. Buttons: play/pause, next/previous, setup. The OLED shows the track name and animations.
+4. Buttons: play/pause, next/previous, setup. The display UI is drawn inside the angled window, with the corner areas kept black.
 5. LED effects follow the music (planned).
 
 ## BOM:
@@ -50,7 +50,7 @@ Here should be everything you need to make the PhantomPod. The full KiCad parts 
 
 **Main parts**
 - 1x ESP32-S3-WROOM-1-N16 module
-- 1x 0.96"/1.3" 128x64 I2C OLED display (4-pin: GND, VCC, SCL, SDA)
+- 1x 2.23" 128x32 I2C OLED display (4-pin: GND, VCC, SCL, SDA)
 - 1x RC522 RFID reader module (8-pin)
 - 1x PCM5102A DAC breakout (6-pin)
 - 1x TPA6132A2 headphone amplifier
