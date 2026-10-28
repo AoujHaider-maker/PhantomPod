@@ -23,8 +23,10 @@ I built this for [Stardance](https://stardance.space/r-33jyd), a Hack Club progr
 ## CAD Model:
 
 ## PCB
-Here's the PCB Schematic I made in  KiCad.
+Here's the PCB I made in  KiCad.
 <img width="946" height="616" alt="image" src="https://github.com/user-attachments/assets/bd4c1319-b21f-4a1a-9bf5-bd641cfeca20" />
+
+<img width="977" height="674" alt="image" src="https://github.com/user-attachments/assets/736c56b5-f92a-4428-8a99-5190ab44b667" />
 
 ## Firmware Overview
 
