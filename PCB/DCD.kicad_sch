@@ -11909,7 +11909,7 @@
 		)
 		(uuid "3f66ffa8-0b14-403a-815c-1aebbb963707")
 	)
-	(label "SPI_SCK"
+	(label "SPI_MOSI"
 		(at 237.49 176.53 0)
 		(effects
 			(font
@@ -12899,7 +12899,7 @@
 		)
 		(uuid "ed33276b-bc75-4759-aec8-fccb317c8150")
 	)
-	(label "SPI_MOSI"
+	(label "SPI_SCK"
 		(at 237.49 173.99 0)
 		(effects
 			(font
