@@ -36,13 +36,7 @@ Here's the PCB I made in  KiCad.
 
 ## Firmware Overview
 
-The firmware for the ESP32-S3 is planned in Arduino/PlatformIO. It is not written yet, because I'm waiting for the hardware to test it. Planned design:
-
-1. Boot, then initialise the OLED, buttons, encoder and the RGB LEDs.
-2. Poll the RC522 RFID reader for a cassette tag. When one is detected, power the cassette contacts (CASS_EN) and mount its microSD card over SPI.
-3. Play audio from the card through the PCM5102A DAC over I2S, with volume from the rotary encoder.
-4. Buttons: play/pause, next/previous, setup. The display UI is drawn inside the angled window, with the corner areas kept black.
-5. LED effects follow the music (planned).
+Starter bring-up firmware (PlatformIO, ESP32-S3). It checks the OLED, LEDs, RC522, cassette microSD, audio and controls. Pins are in Firmware/include/pins.h. It has not been tested on hardware yet, because the board hasn’t been built. Music playback and the menu are still to do. Anyone building this is welcome to write their own firmware.
 
 ## BOM:
 
