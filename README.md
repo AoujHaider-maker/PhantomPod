@@ -1,12 +1,9 @@
 # PhantomPod!
-Concept illustration
+Concept illustration:
+
 <img width="363" height="479" alt="image" src="https://github.com/user-attachments/assets/e3178f4f-8b4d-403e-b12b-a08705990edb" />
 
-
-
-PhantomPod is a Device that can store your music and/or your audio files in a physical format.
-
-I built this for [Stardance](https://stardance.space/r-33jyd), a Hack Club program where teens get to learn how to design their own custom hardware + software from scratch with all the physical components granted for free!
+PhantomPod is a pocket digital cassette player built around an ESP32-S3. You slot in a vertical cassette-shaped cartridge that holds a microSD card and an NFC tag. Spring-loaded pogo pins read its six gold contacts, and the player recognizes it automatically. It has a 2.23" 128×32 OLED, 12 underglow RGB LEDs, a side rotary encoder and buttons, two headphone jacks driven by a PCM5102A DAC and TPA6132A2 amp, and USB-C LiPo charging. I designed the whole 80×125 mm 2-layer PCB in KiCad (schematic, layout, DRC/ERC clean), exported the Gerbers and BOM, and wrote a PlatformIO bring-up firmware starter. It hasn’t been built yet, so the firmware is untested on hardware.
 
 ## Features:
 
