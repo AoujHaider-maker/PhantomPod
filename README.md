@@ -24,7 +24,7 @@ I built this for [Stardance](https://stardance.space/r-33jyd), a Hack Club progr
 
 The PhantomPod is a clear shell, roughly 88 × 133.5 mm and about 20 mm thick, so the circuit board and underglow LEDs are visible. The cassette slides in vertically from the top, and the pogo pins touch its six gold pads. The OLED sits behind an angled window in the front shell. The display itself is rectangular, and the bezel plus the firmware (which keeps the corners black) give it the angled shape.
 
-The PCB's 3D model was exported from KiCad (see hardware/).
+The PCB's 3D model was exported from KiCad (see PCB/ and CAD/ ).
 
 ## PCB
 Here's the PCB I made in  KiCad.
@@ -38,7 +38,7 @@ Starter bring-up firmware (PlatformIO, ESP32-S3). It checks the OLED, LEDs, RC52
 
 ## BOM:
 
-Here should be everything you need to make the PhantomPod. The full KiCad parts list is in Prodection/DCD.csv.
+Here should be everything you need to make the PhantomPod. The full KiCad parts list is in Production/DCD.csv.
 
 **Main parts**
 - 1x ESP32-S3-WROOM-1-N16 module
