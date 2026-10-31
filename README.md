@@ -73,3 +73,5 @@ Here should be everything you need to make the PhantomPod. The full KiCad parts 
 - Resistors: 4x 100 kOhm, 2x 10 kOhm, 2x 5.1 kOhm, 1x 2 kOhm, 1x 1 kOhm, 1x 330 Ohm
 - 1x red or green LED (charge indicator)
 - Female pin sockets for the modules (1x4, 1x8, 1x6, 1x3) and a 1x6 pin header
+## IMPORTANT
+This is a design that hasn’t been built yet.
