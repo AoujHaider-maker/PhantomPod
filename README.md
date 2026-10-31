@@ -1,4 +1,5 @@
 # PhantomPod!
+Concept illustration
 <img width="363" height="479" alt="image" src="https://github.com/user-attachments/assets/e3178f4f-8b4d-403e-b12b-a08705990edb" />
 
 
@@ -22,9 +23,7 @@ I built this for [Stardance](https://stardance.space/r-33jyd), a Hack Club progr
   
 ## CAD Model:
 
-The PhantomPod is a clear shell, roughly 88 × 133.5 mm and about 20 mm thick, so the circuit board and underglow LEDs are visible. The cassette slides in vertically from the top, and the pogo pins touch its six gold pads. The OLED sits behind an angled window in the front shell. The display itself is rectangular, and the bezel plus the firmware (which keeps the corners black) give it the angled shape.
-
-The PCB's 3D model was exported from KiCad (see PCB/ and CAD/ ).
+Design target: a clear shell roughly 88 × 133.5 mm and about 20 mm thick, so the board and underglow LEDs are visible. The cassette slides in vertically from the top and the pogo pins touch its six gold pads. The OLED sits behind an angled window; the display is rectangular, and the bezel plus the firmware (which keeps the corners black) give it the angled shape. The casing isn’t modelled yet. The board’s 3D model is in CAD/ for anyone designing one.
 
 ## PCB
 Here's the PCB I made in  KiCad.
