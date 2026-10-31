@@ -38,7 +38,7 @@ Starter bring-up firmware (PlatformIO, ESP32-S3). It checks the OLED, LEDs, RC52
 
 ## BOM:
 
-Here should be everything you need to make the PhantomPod. The full KiCad parts list is in docs/DCD-BOM.csv.
+Here should be everything you need to make the PhantomPod. The full KiCad parts list is in Prodection/DCD-BOM.csv.
 
 **Main parts**
 - 1x ESP32-S3-WROOM-1-N16 module
